@@ -1,0 +1,90 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Brad Gibson",
+      "company": "YouTube",
+      "email": "brad@gmail.com",
+      "title": "Youtuber",
+      "mobile": "9876546787",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g8R5VmgqDqpRCwQfw2Y9V-DM-iXS59R9hQ&usqp=CAU",
+      "groupId": "3"
+    },
+    {
+      "id": "2",
+      "name": "Glenda Kim",
+      "company": "Friend",
+      "email": "glenda@gmail.com",
+      "title": "freelancer",
+      "mobile": "8880009991",
+      "photo": "https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png",
+      "groupId": "2"
+    },
+    {
+      "id": "3",
+      "name": "Rajan",
+      "photo": "https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/256/User-icon.png",
+      "mobile": "9090909090",
+      "email": "rajan@gmail.com",
+      "company": "HCL Technologies",
+      "title": "Software Engineer",
+      "groupId": "1"
+    },
+    {
+      "id": "4",
+      "name": "Abel Baba",
+      "company": "Student",
+      "email": "ao@gmail.com",
+      "title": "Student",
+      "mobile": "6471234567",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g8R5VmgqDqpRCwQfw2Y9V-DM-iXS59R9hQ&usqp=CAU",
+      "groupId": "3"
+    },
+    {
+      "id": "5",
+      "name": "Nath Baba",
+      "company": "Student",
+      "email": "Nath@gmail.com",
+      "title": "Student",
+      "mobile": "6474234567",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g8R5VmgqDqpRCwQfw2Y9V-DM-iXS59R9hQ&usqp=CAU",
+      "groupId": "1"
+    },
+    {
+      "id": "6",
+      "name": "Vbaba Abelly",
+      "company": "OANWAVE",
+      "email": "vBaba@gmail.com",
+      "title": "DEV",
+      "mobile": "9876546787",
+      "photo": "https://png.pngtree.com/png-clipart/20190922/original/pngtree-business-male-user-avatar-vector-png-image_4774078.jpg",
+      "groupId": "3"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}
