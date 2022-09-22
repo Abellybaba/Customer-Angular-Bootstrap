@@ -16,7 +16,7 @@ export class ContactService {
   
   
   //Define base url for server
-  private serverUrl: string = "http://localhost:9000"; //server url
+  private serverUrl: string = "https://my-json-server.typicode.com/abellybaba/contact-json-api"; //server url
 
   constructor(private httpClient: HttpClient) { }
 
