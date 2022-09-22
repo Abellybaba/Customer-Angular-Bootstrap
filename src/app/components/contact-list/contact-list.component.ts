@@ -27,7 +27,8 @@ export class ContactListComponent implements OnInit {
     })
   }
   deleteContact(row: any){
-    this.contactService.deleteContact(row.id).subscribe((res)=>{
+    return this.contactService.deleteContact(row.id).subscribe(res=>
+      {
       alert('Contact deleted');
       this.getListOfContacts();
     })

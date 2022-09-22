@@ -9,7 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactManagerComponent } from './components/contact-manager/contact-manager.component';
 import { AddContactComponent } from './components/add-contact/add-contact.component';
-import { EditContactComponent } from './components/edit-contact/edit-contact.component';
+
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { ViewContactComponent } from './components/view-contact/view-contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -27,7 +27,6 @@ import { ContactListComponent } from './components/contact-list/contact-list.com
     NavbarComponent,
     ContactManagerComponent,
     AddContactComponent,
-    EditContactComponent,
     SpinnerComponent,
     ViewContactComponent,
     PageNotFoundComponent,

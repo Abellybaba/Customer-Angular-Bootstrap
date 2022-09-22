@@ -79,7 +79,8 @@ export class AddContactComponent implements OnInit {
   }
 
   //function for adding contacts
-  addContact() {
+  addContact() 
+  {
     if (this.contactForm.valid) {
       this.contactService.createContact(this.contactForm.value).subscribe(
         (res) => {

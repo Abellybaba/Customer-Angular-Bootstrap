@@ -34,19 +34,42 @@
       </div>
     </div>
   </nav>
+  <div class="container mt-3 pb-5">
+    <div class="row">
+      <div class="col d-flex">
+        <div class="col-8">
+        <h1 class="text-primary fw-bold">Add Contacts</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia
+          repellat quidem suscipit repellendus deserunt alias fugiat, veritatis
+          natus, quam fugit sequi earum eum, enim ex corrupti dolorem velit
+          aliquid.
+        </p>
+      </div>
+        <div class="col-4 justify-content-center text-center pt-5 ">
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Add Contact
+</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 
 <!-- Modal -->
-<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Add Contact Information</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Enter Contact Information</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-         <form>
+        <form class="col-8" [formGroup]="contactForm">
           <div class="mb-3">
            
             <input type="text" class="form-control" formControlName="name" name="" id="" aria-describedby="helpId" placeholder="" />
@@ -80,23 +103,41 @@
             <small id="helpId" class="form-text text-muted">Enter Title</small>
           </div>
          
-         <div class="mb-3" > 
-            <input type="text" class="form-control" formControlName="groupId" name="" id="" aria-describedby="helpId" placeholder="" />
-            <small id="helpId" class="form-text text-muted">Enter a Group No</small>
-           </div> 
+          <div class="mb-3" >
+            <select formControlName="groupId" class="form-control">
+              <!-- <option [value]="x" *ngFor="let x of groupOptions">{{x}}</option> -->
+              <option selected>Open this select menu</option>
+  <option value="Family">Family</option>
+  <option value="Friends">Friends</option>
+  <option value="Colleague">Colleague</option>
+  <option value="Community">Community</option>
+  <option value="Social">Social</option>
+  <option value="Service">Service</option>
+</select>
+            <small id="helpId" class="form-text text-muted">Select a Group</small>
+          </div>
   
-      
-          <div class="mb-3">
-            <input type="submit" class="btn btn-primary" value="Create"/>
-            <a routerLink="" class="btn btn-dark ms-2">Close</a>
-          </div> 
-          
-        </form>  
+          <!-- <div class="mb-3">
+            <div class="mb-3">
+              <label for="" class="form-label">Select a Group</label>
+              <select class="form-control" name="" id="">
+                <option>Family</option>
+                <option>Work</option>
+                <option>Friends</option>
+              </select>
+            </div>
+          </div> -->
+          <!-- <div class="mb-3">
+            <input type="submit" class="btn btn-primary" value="Create" />
+            <a routerLink="/contacts/admin" class="btn btn-dark ms-2">Close</a>
+          </div> -->
+          <!-- <pre>{{contact | json}}</pre> -->
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-primary" (click)="addCustomer()">Add</button>
       </div>
     </div>
   </div>
-</div> -->
+</div>
